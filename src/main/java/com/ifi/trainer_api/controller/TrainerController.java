@@ -35,4 +35,10 @@ public class TrainerController {
         return trainerService.createTrainer(t);
     }
 
+    @DeleteMapping("/{name}")
+    void removeTrainer(@PathVariable String name){
+        trainerService.removeTrainer(name);
+    }
+
+
 }
