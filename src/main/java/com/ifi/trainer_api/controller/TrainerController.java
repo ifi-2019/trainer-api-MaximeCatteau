@@ -19,13 +19,11 @@ public class TrainerController {
 
     @GetMapping("/")
     Iterable<Trainer> getAllTrainers(){
-        // TODO
         return trainerService.getAllTrainers();
     }
 
     @GetMapping("/{name}")
     Trainer getTrainer(@PathVariable String name){
-        // TODO
         return trainerService.getTrainer(name);
     }
 
